@@ -25,11 +25,12 @@ local chest_stuff = {
 	{name="default:gold_ingot", max = 2},
 	{name="default:diamond", max = 1},
 	{name="default:pick_steel", max = 1},
-	{name="default:pick_diamond", max = 1}
+	{name="default:pick_diamond", max = 1},
+	{name="default:acacia_sapling", max = 3}
 }
 
 if minetest.get_modpath("farming") then
-	chest_stuff[7] = {name="farming:bread", max = 3}
+	chest_stuff[8] = {name="farming:bread", max = 3}
 end
 
 local function fill_chest(pos)
