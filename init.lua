@@ -94,7 +94,7 @@ local function get_item_and_amount(list_item, actual_depth)
 		return nil, 0
 	end
 	-- Suspicious trickery
-	local ist_name = nil
+	local list_name = nil
 	local list_name_string = "dungeon_loot." .. list_item.name .. "_list"
 -- 	list_name = _G[list_name_string]
 	local lsf = loadstring("list_name = " .. list_name_string)
