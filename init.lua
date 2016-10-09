@@ -94,10 +94,10 @@ local function get_item_and_amount(list_item, actual_depth)
 		return nil, 0
 	end
 	-- Suspicious trickery
-	list_name = nil
-	list_name_string = "dungeon_loot." .. list_item.name .. "_list"
+	local ist_name = nil
+	local list_name_string = "dungeon_loot." .. list_item.name .. "_list"
 -- 	list_name = _G[list_name_string]
-	lsf = loadstring("list_name = " .. list_name_string)
+	local lsf = loadstring("list_name = " .. list_name_string)
 	lsf()
 	if list_name == nil then
 		error("Unable to connect " .. list_name_string .. " to actual table")
